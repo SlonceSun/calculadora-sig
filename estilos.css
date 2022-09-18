@@ -1,0 +1,297 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-image: radial-gradient(circle, #e64980 5%, #ffa94d 47%, #f783ac 73%, #ff8787 95%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.calculadora {
+	display: grid;
+	grid-template-columns: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+	grid-template-rows: 0fr 1fr 0fr 1fr 1fr 1fr 1fr 1fr 1fr 0fr;
+	gap: 20px 20px;
+	grid-auto-flow: row;
+	grid-template-areas:
+		'. . . . . . . .'
+		'. resultado resultado resultado resultado resultado resultado .'
+		'. . . . . . . .'
+		'. parent_ini parent_fin factorial x_2 raiz_2 raiz_n .'
+		'. sin cos tg x_3 raiz_3 x_n .'
+		'. uno dos tres division porcentaje ln .'
+		'. cuatro cinco seis multiplicacion log exponencial .'
+		'. siete ocho nueve menos ac igual .'
+		'. punto cero pi mas mr igual .'
+		'. . . . . . . .';
+	width: 650px;
+	height: 800px;
+	background-color: #e64980;
+	border-radius: 5%;
+}
+
+.resultado {
+	grid-area: resultado;
+	border-radius: 26px;
+	background: #ffd6d6;
+	box-shadow: inset 5px 5px 6px #d4b2b2, inset -5px -5px 6px #fffafa;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding-right: 50px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #575757;
+	font-weight: bold;
+	font-size: xx-large;
+	letter-spacing: 1px;
+}
+
+.parent_ini {
+	grid-area: parent_ini;
+}
+
+.parent_fin {
+	grid-area: parent_fin;
+}
+
+.factorial {
+	grid-area: factorial;
+}
+
+.x_2 {
+	grid-area: x_2;
+}
+
+.raiz_2 {
+	grid-area: raiz_2;
+}
+
+.raiz_n {
+	grid-area: raiz_n;
+}
+
+.x_n {
+	grid-area: x_n;
+}
+
+.raiz_3 {
+	grid-area: raiz_3;
+}
+
+.ln {
+	grid-area: ln;
+}
+
+.porcentaje {
+	grid-area: porcentaje;
+}
+
+.exponencial {
+	grid-area: exponencial;
+}
+
+.log {
+	grid-area: log;
+}
+
+.ac {
+	grid-area: ac;
+}
+
+.mr {
+	grid-area: mr;
+}
+
+.igual {
+	grid-area: igual;
+}
+
+.x_3 {
+	grid-area: x_3;
+}
+
+.tg {
+	grid-area: tg;
+}
+
+.cos {
+	grid-area: cos;
+}
+
+.sin {
+	grid-area: sin;
+}
+
+.division {
+	grid-area: division;
+}
+
+.multiplicacion {
+	grid-area: multiplicacion;
+}
+
+.menos {
+	grid-area: menos;
+}
+
+.mas {
+	grid-area: mas;
+}
+
+.pi {
+	grid-area: pi;
+}
+
+.cero {
+	grid-area: cero;
+}
+
+.punto {
+	grid-area: punto;
+}
+
+.dos {
+	grid-area: dos;
+}
+
+.tres {
+	grid-area: tres;
+}
+
+.uno {
+	grid-area: uno;
+}
+
+.cuatro {
+	grid-area: cuatro;
+}
+
+.cinco {
+	grid-area: cinco;
+}
+
+.seis {
+	grid-area: seis;
+}
+
+.siete {
+	grid-area: siete;
+}
+
+.ocho {
+	grid-area: ocho;
+}
+
+.nueve {
+	grid-area: nueve;
+}
+
+.parent_ini,
+.factorial,
+.x_2,
+.parent_fin,
+.raiz_2,
+.raiz_n,
+.sin,
+.cos,
+.tg,
+.x_3,
+.raiz_3,
+.x_n,
+.uno,
+.dos,
+.tres,
+.division,
+.porcentaje,
+.ln,
+.cuatro,
+.cinco,
+.seis,
+.multiplicacion,
+.log,
+.exponencial,
+.siete,
+.ocho,
+.nueve,
+.menos,
+.ac,
+.punto,
+.cero,
+.pi,
+.mas,
+.mr {
+	border-radius: 50%;
+	background: #575757;
+	box-shadow: inset -8px 8px 14px #3d3d3d, inset 8px -8px 14px #717171;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: xx-large;
+	letter-spacing: 1px;
+}
+
+.igual {
+	border-radius: 20%;
+	background: #575757;
+	box-shadow: inset -8px 8px 14px #3d3d3d, inset 8px -8px 14px #717171;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: xx-large;
+	letter-spacing: 1px;
+}
+
+.parent_ini:hover,
+.factorial:hover,
+.x_2:hover,
+.parent_fin:hover,
+.raiz_2:hover,
+.raiz_n:hover,
+.sin:hover,
+.cos:hover,
+.tg:hover,
+.x_3:hover,
+.raiz_3:hover,
+.x_n:hover,
+.uno:hover,
+.dos:hover,
+.tres:hover,
+.division:hover,
+.porcentaje:hover,
+.ln:hover,
+.cuatro:hover,
+.cinco:hover,
+.seis:hover,
+.multiplicacion:hover,
+.log:hover,
+.exponencial:hover,
+.siete:hover,
+.ocho:hover,
+.nueve:hover,
+.menos:hover,
+.ac:hover,
+.punto:hover,
+.cero:hover,
+.pi:hover,
+.mas:hover,
+.mr:hover {
+	color: rgb(0, 0, 0);
+}
+
+.igual:hover {
+	color: rgb(0, 0, 0);
+}
